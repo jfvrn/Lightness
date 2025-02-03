@@ -13,7 +13,6 @@ const form = document.querySelector("form");
 
 //gestion des événements lors de la soumission du formulaire
 form.addEventListener("submit", (e) => {
-    const notyf = new Notyf();
   e.preventDefault(); // empeche le comportement par défault (refresh la page)
   const hexaColorInput = e.target.firstElementChild.value;
 
@@ -71,7 +70,6 @@ const displayColors = (palette) => {
 const main = document.querySelector("main");
 
 main.addEventListener("click", (e) => {
-  const notyf = new Notyf();
     if (e.target.classList.contains("color")) {
         const paletteElement = e.target.closest(".color").dataset.color;
         navigator.clipboard.writeText(paletteElement).then(
