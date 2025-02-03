@@ -1,8 +1,6 @@
 .DS_Store
 package-lock.json
 node_modules
-.gitignore
 
 # Local Netlify folder
 .netlify
-netlify.toml
