@@ -71,6 +71,7 @@ const displayColors = (palette) => {
 const main = document.querySelector("main");
 
 main.addEventListener("click", (e) => {
+  const notyf = new Notyf();
     if (e.target.classList.contains("color")) {
         const paletteElement = e.target.closest(".color").dataset.color;
         navigator.clipboard.writeText(paletteElement).then(
